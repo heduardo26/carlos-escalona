@@ -99,9 +99,7 @@ public class MessageServiceImpl implements MessageService {
      * @throws RuntimeException
      */
     private Group validateGroupId(Long groupId) {
-        Optional<Group> group = groupRepo.findById(groupId);
-        group.orElseThrow(() -> new ResourceNotFoundException("Group not found")); //RuntimeException("Group not exist")
-        return group.get();
+        return groupRepo.findById(groupId).orElseThrow(() -> new ResourceNotFoundException("Group not found"));
     }
 
     /**
@@ -112,9 +110,7 @@ public class MessageServiceImpl implements MessageService {
      * @throws RuntimeException
      */
     private User validateUserId(Long userId) {
-        Optional<User> user = userRepo.findById(userId);
-        user.orElseThrow(() -> new ResourceNotFoundException("User not exist"));
-        return user.get();
+        return userRepo.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User not exist"));
     }
 
     /**
