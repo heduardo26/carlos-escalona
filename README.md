@@ -30,18 +30,15 @@ El sistema se enfoca principalmente en un servicio que es el de enviar mensajes 
 "text": "mensaje",
 "type": "TEXT"}`
 
-##### groupId:
-    Es el id del grupo a donde será enviado el mensaje para efectos practicos siempre se usara el id 1
-##### senderId:
-    Es el id del usaurio emisor del mensaje se puede usar los Id de 1 a 10 que ya están registrados en la BD.
-##### text:
-    Es un texto cualquiera que puede contener el mensaje.
-##### type:
-    Es el tipo de mensaje que se va a enviar se puede escoger entre los valores TEXT, VOICE, DOCUMENT aunque para efectos practicos no tendra relevancia en este proyecto el tipo de mensaje.  
+###### groupId: Es el id del grupo a donde será enviado el mensaje para efectos practicos siempre se usara el id 1
+###### senderId: Es el id del usaurio emisor del mensaje se puede usar los Id de 1 a 10 que ya están registrados en la BD.
+###### text: Es un texto cualquiera que puede contener el mensaje.
+###### type: Es el tipo de mensaje que se va a enviar se puede escoger entre los valores TEXT, VOICE, DOCUMENT aunque para efectos practicos no tendra relevancia en este proyecto el tipo de mensaje.  
 
 
+-------------------------------------------------------------------
 
-El proceso de envio de mensajes consiste en que al momento del envio este se almacenara en la tabla MESSAGE de la BD, para luego buscar todos los usuarios del grupo al que va dirigido el mensaje, sin incluir al remitente, y simular una notificacion a cada uno de estos usuarios. La idea que tenía para las notificaciones era implementar un patron observador o la implementación de una cola de mensajería pero por cuestiones de tiempo no alcance a desarrollarlo pero la idea es esa. A traves de la consola se puede ver las notificaciones que tienen cada uno de los usarios pertenecientes al grupo.
+  El proceso de envio de mensajes consiste en que al momento del envio este se almacenara en la tabla MESSAGE de la BD, para luego buscar todos los usuarios del grupo al que va dirigido el mensaje, sin incluir al remitente, y simular una notificacion a cada uno de estos usuarios. La idea que tenía para las notificaciones era implementar un patron observador o la implementación de una cola de mensajería pero por cuestiones de tiempo no alcance a desarrollarlo pero la idea es esa. A traves de la consola se puede ver las notificaciones que tienen cada uno de los usarios pertenecientes al grupo.
 
 
 [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
