@@ -57,5 +57,5 @@ El sistema se enfoca principalmente en un servicio que es el de enviar mensajes 
 ![My Image](MER.png)
 
 ### Diagrama de Clases
-
+![My Image](ClassDiagram.jpeg)
 
