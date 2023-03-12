@@ -60,7 +60,9 @@ El sistema se enfoca principalmente en el servicio de enviar mensajes (http://lo
 ## Documentación
 
 ### Arquitectura
-  Se implementó una arquitectura N-tier o de capas, en la cual existe un controlador principal que ejecuta varios servicios (Interfaces) que son implementados por clases que contienen la lógica de negocio, estas clases (Implement) hacen uso de los servicios de las interfaces repository.   
+  Se implementó una arquitectura N-tier o de capas, en la cual existe un controlador principal que ejecuta varios servicios (Interfaces) que son implementados por clases que contienen la lógica de negocio, estas clases (Implement) hacen uso de los servicios de las interfaces repository.
+
+
 
 ### Modelo Entidad Relación (BD) 
 ![My Image](MER.png)
