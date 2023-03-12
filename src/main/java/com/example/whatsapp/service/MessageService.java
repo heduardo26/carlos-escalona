@@ -8,5 +8,5 @@ import java.util.List;
 public interface MessageService {
     void sendMessage(MessageDto message) ;
 
-    List<Message> getMessagesByGroup(Long GroupId);
+    List<Message> getMessagesByGroup(Long groupId);
 }

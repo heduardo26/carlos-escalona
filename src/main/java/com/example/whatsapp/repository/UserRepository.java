@@ -1,6 +1,5 @@
 package com.example.whatsapp.repository;
 
-import com.example.whatsapp.dto.UserDto;
 import com.example.whatsapp.entity.Group;
 import com.example.whatsapp.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
