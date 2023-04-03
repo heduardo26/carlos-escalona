@@ -82,12 +82,7 @@ public class MainController {
             @ApiResponse(code = 500, message = "Internal errors. This means that some invariants expected by the underlying system have been broken. This error code is reserved for serious errors.")
     })
     public ResponseEntity<Object> getMessagesByGroup(@PathVariable @ApiParam(name = "id", value = "Group id", example = "1") Long id){
-        try {
-            return new ResponseEntity(messageService.getMessagesByGroup(id), HttpStatus.OK);
-        }catch (ResourceNotFoundException r){
-            return new ResponseEntity(r.getMessage(), HttpStatus.NOT_FOUND);
-        }
-
+        return new ResponseEntity(messageService.getMessagesByGroup(id), HttpStatus.OK);
     }
 
 

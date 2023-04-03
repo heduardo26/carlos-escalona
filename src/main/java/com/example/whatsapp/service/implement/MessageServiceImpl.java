@@ -85,7 +85,7 @@ public class MessageServiceImpl implements MessageService {
      * @return
      * @throws RuntimeException
      */
-    public List<Message> getMessagesByGroup(Long groupId) throws RuntimeException {
+    public List<Message> getMessagesByGroup(Long groupId)  {
         Group group = validateGroupId(groupId);
         return messageRepo.getMessageByReceiver(group);
     }
